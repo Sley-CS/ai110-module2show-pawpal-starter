@@ -43,39 +43,51 @@ pip install -r requirements.txt
 7. Refine UML so it matches what you actually built. 
     
 
-  ## Features
+ ## Features
 
-- Owner and pet management with session-persistent owner state in Streamlit.
-- Task creation with duration, priority, due date/time, and optional recurrence.
-- Smart scheduling helpers for sorting and filtering task lists.
-- Lightweight conflict warnings when tasks share the same date/time.
-- Recurring task support that auto-creates the next daily/weekly occurrence on completion.
+ - Owner and pet management with session-persistent owner state in Streamlit.
+ - Task creation with duration, priority, due date/time, and optional recurrence.
+ - Smart scheduling helpers for sorting and filtering task lists.
+ - Lightweight conflict warnings when tasks share the same date/time.
+ - Recurring task support that auto-creates the next daily/weekly occurrence on completion.
 
-## Smarter Scheduling
+ ## Smarter Scheduling
 
-PawPal+ includes a few simple scheduling upgrades:
+ PawPal+ includes a few simple scheduling upgrades:
 
-- Sorting: tasks are ordered by time (`HH:MM`) so the day plan is easier to follow.
-- Filtering: tasks can be filtered by pet name and by status (pending or complete).
-- Recurring tasks: daily and weekly tasks automatically create the next occurrence when completed.
-- Conflict warnings: if two tasks land on the same date/time, the app shows a warning instead of failing.
+ - Sorting: tasks are ordered by time (`HH:MM`) so the day plan is easier to follow.
+ - Filtering: tasks can be filtered by pet name and by status (pending or complete).
+ - Recurring tasks: daily and weekly tasks automatically create the next occurrence when completed.
+ - Conflict warnings: if two tasks land on the same date/time, the app shows a warning instead of failing.
 
-## Testing PawPal+
+ ## Testing PawPal+
 
-The pytest suite covers core scheduling behavior:
+ The pytest suite covers core scheduling behavior:
 
-- Task completion status updates.
-- Pet task assignment and task-count changes.
-- Time sorting ("HH:MM") behavior.
-- Filtering by pet and completion status.
-- Recurring task generation for daily tasks.
-- Conflict warning detection for overlapping task times.
+ - Task completion status updates.
+ - Pet task assignment and task-count changes.
+ - Time sorting ("HH:MM") behavior.
+ - Filtering by pet and completion status.
+ - Recurring task generation for daily tasks.
+ - Conflict warning detection for overlapping task times.
 
-Run tests with:
+ Run tests with:
 
-```bash
-python -m pytest
-```
+ ```bash
+ python -m pytest
+ ```
 
-Confidence Level: ★★★★☆ (4/5)
+## 📸 Demo
+
+<a href="/course_images/ai110/Screenshot1_30-3-2026_134138_localhost.jpeg" target="_blank"><img src='/course_images/ai110/Screenshot1_30-3-2026_134138_localhost.jpeg' title='PawPal App' width='900' alt='PawPal App' class='center-block' /></a>
+
+<a href="/course_images/ai110/Screenshot2_30-3-2026_134223_localhost.jpeg" target="_blank"><img src='/course_images/ai110/Screenshot2_30-3-2026_134223_localhost.jpeg' title='PawPal App' width='900' alt='PawPal App' class='center-block' /></a>
+
+<a href="/course_images/ai110/Screenshot3_30-3-2026_13439_localhost.jpeg" target="_blank"><img src='/course_images/ai110/Screenshot3_30-3-2026_13439_localhost.jpeg' title='PawPal App' width='900' alt='PawPal App' class='center-block' /></a>
+
+<a href="/course_images/ai110/Screenshot4_30-3-2026_134338_localhost.jpeg" target="_blank"><img src='/course_images/ai110/Screenshot4_30-3-2026_134338_localhost.jpeg' title='PawPal App' width='900' alt='PawPal App' class='center-block' /></a>
+
+<a href="/course_images/ai110/Screenshot5_30-3-2026_13447_localhost.jpeg" target="_blank"><img src='/course_images/ai110/Screenshot5_30-3-2026_13447_localhost.jpeg' title='PawPal App' width='900' alt='PawPal App' class='center-block' /></a>
+
+<a href="/course_images/ai110/PawPal+ Demo.pdf" target="_blank">Open PawPal+ Demo PDF</a>
   
