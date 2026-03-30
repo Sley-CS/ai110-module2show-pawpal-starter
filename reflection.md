@@ -39,7 +39,7 @@ After reviewing my initial class skeleton, I made several improvements based on 
 - Describe one tradeoff your scheduler makes.
 - Why is that tradeoff reasonable for this scenario?
 
-20262025 My scheduler only checks exact same-time matches for conflicts (for example, two tasks both at 08:00). It does not yet calculate overlap by duration. I accepted that tradeoff because it keeps the code easy to understand, and simple conflict warnings are enough for this project stage.
+My scheduler only checks exact same-time matches for conflicts (for example, two tasks both at 08:00). It does not yet calculate overlap by duration. I accepted that tradeoff because it keeps the code easy to understand, and simple conflict warnings are enough for this project stage.
 
 ---
 
@@ -85,11 +85,11 @@ After reviewing my initial class skeleton, I made several improvements based on 
 
 - What is one important thing you learned about designing systems or working with AI on this project
 
-20262025 The Copilot features that helped most were iterative code generation for class methods, targeted test generation, and quick review feedback on relationship gaps. The most useful pattern was giving narrow prompts (for example, one scheduler feature at a time), then immediately running tests to validate behavior.
+The Copilot features that helped most were iterative code generation for class methods, targeted test generation, and quick review feedback on relationship gaps. The most useful pattern was giving narrow prompts (for example, one scheduler feature at a time), then immediately running tests to validate behavior.
 
-20262025 One suggestion I rejected was adding heavy optimization and complex validation layers too early. I chose to keep the scheduler lightweight and readable first, then add focused improvements like sorting, filtering, recurrence, and conflict warnings.
+One suggestion I rejected was adding heavy optimization and complex validation layers too early. I chose to keep the scheduler lightweight and readable first, then add focused improvements like sorting, filtering, recurrence, and conflict warnings.
 
-20262025 Using separate chat sessions helped me stay organized by phase. One session focused on UML and class structure, another on algorithm features, and another on testing and docs. That separation reduced context noise and made decisions clearer.
+Using separate chat sessions helped me stay organized by phase. One session focused on UML and class structure, another on algorithm features, and another on testing and docs. That separation reduced context noise and made decisions clearer.
 
-20262025 My biggest lesson was that I need to act as the lead architect, not just accept generated code. AI accelerated implementation, but I still had to define constraints, choose tradeoffs, and keep the design coherent across UI, domain logic, tests, and documentation.
+My biggest lesson was that I need to act as the lead architect, not just accept generated code. AI accelerated implementation, but I still had to define constraints, choose tradeoffs, and keep the design coherent across UI, domain logic, tests, and documentation.
 
