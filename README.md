@@ -40,4 +40,42 @@ pip install -r requirements.txt
 4. Implement scheduling logic in small increments.
 5. Add tests to verify key behaviors.
 6. Connect your logic to the Streamlit UI in `app.py`.
-7. Refine UML so it matches what you actually built.
+7. Refine UML so it matches what you actually built. 
+    
+
+  ## Features
+
+- Owner and pet management with session-persistent owner state in Streamlit.
+- Task creation with duration, priority, due date/time, and optional recurrence.
+- Smart scheduling helpers for sorting and filtering task lists.
+- Lightweight conflict warnings when tasks share the same date/time.
+- Recurring task support that auto-creates the next daily/weekly occurrence on completion.
+
+## Smarter Scheduling
+
+PawPal+ includes a few simple scheduling upgrades:
+
+- Sorting: tasks are ordered by time (`HH:MM`) so the day plan is easier to follow.
+- Filtering: tasks can be filtered by pet name and by status (pending or complete).
+- Recurring tasks: daily and weekly tasks automatically create the next occurrence when completed.
+- Conflict warnings: if two tasks land on the same date/time, the app shows a warning instead of failing.
+
+## Testing PawPal+
+
+The pytest suite covers core scheduling behavior:
+
+- Task completion status updates.
+- Pet task assignment and task-count changes.
+- Time sorting ("HH:MM") behavior.
+- Filtering by pet and completion status.
+- Recurring task generation for daily tasks.
+- Conflict warning detection for overlapping task times.
+
+Run tests with:
+
+```bash
+python -m pytest
+```
+
+Confidence Level: ★★★★☆ (4/5)
+  
